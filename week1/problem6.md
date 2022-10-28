@@ -7,8 +7,9 @@
 2. 예외 처리
     + 제한 사항 외에 문제가 될만한 예외는 없을 것으로 보임
 
-3. 함수 - 1개
-    1. 유저 수만큼(List size만큼) for문을 돌며, 해당 인덱스의 유저 닉네임이 중복됐는지 chek 함수 checkDuplicateString(): Boolean
+3. 함수 - 2개
+    1. 유저 닉네임들을 문자열 하나에 모두 담아주는 함수 setUserNickname(): String 
+    2. 유저 수만큼(List size만큼) for문을 돌며, 해당 인덱스의 유저 닉네임이 중복됐는지 chek 함수 checkDuplicateString(): Boolean
         + 이때, 매개변수로 모든 유저들의 이름을 담은 문자열 하나와, 탐색할 유저 닉네임 받음
 
 4. 접근 방법
