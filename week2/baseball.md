@@ -30,7 +30,9 @@
     | isNegativeNumber | String inputData | Boolean | 입력값 음수인지 check |
     | isNotThreeDigits | String inputData | Boolean | 입력값 3자리수인지 check |
     | isNotInteger | String inputData | Boolean | 입력값 정수인지 check |
+    | isGameOver | List<Int> | Boolean | strike 개수 3개인지 check |
     | compareData | String opponentData, String inputData | List<Int> | 상대방 숫자와 입력값 비교 후 결과 return |
+    | gameResultString | List<Int> | String | 게임 결과 String return |
     | continueGame | String inputContinue | Boolean | 게임 종료 후 입력 된 숫자 확인하여 게임 continue(true) / exit(false) return |
 
     + compareData return List<Int> -> ball / strike 2개를 카운트한 List
