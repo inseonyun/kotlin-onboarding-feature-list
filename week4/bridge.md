@@ -62,19 +62,19 @@
     | isNotInteger | String inputData | Boolean | 입력값 정수인지 check |
     | isNotBridgeNumber | String inputData | Boolean | 입력값 3이상 20 이하의 수인지 check |
     
-    3. BridgeMoveException 클래스
+    2. BridgeMoveException 클래스
 
     | 함수명 | 매개변수 | 리턴타입 | 용도 |
     | --- | --- | --- | --- |
     | isNotMoveCharacter | String inputData | Boolean | 입력값 'U' 혹은 'D'인지 check |
    
-    5. GameCommandException 클래스
+    3. GameCommandException 클래스
 
     | 함수명 | 매개변수 | 리턴타입 | 용도 |
     | --- | --- | --- | --- |
     | isNotExitCharacter | String inputData | Boolean | 입력값 'R' 혹은 'Q'인지 check |
     
-    7. InputView 클래스
+    4. InputView 클래스
 
     | 함수명 | 매개변수 | 리턴타입 | 용도 |
     | --- | --- | --- | --- |
@@ -82,25 +82,25 @@
     | inputMoveIndex |  | String | 이동할 칸 입력 받아 예외 처리 후 return |
     | inputExit |  | String | 게임 재시작, 종료 여부 입력 받아 예외 처리 후 return |
 
-    9. OutputView 클래스
+    5. OutputView 클래스
 
     | 함수명 | 매개변수 | 리턴타입 | 용도 |
     | --- | --- | --- | --- |
     | printMap |  |  | 터미널에 '맵의 정보' 출력 |
     | printResult | gameResult: Boolean, tryCount: Int |  | 터미널에 '게임 결과 출력' 출력 |
 
-    11. BridgeGame 클래스
+    6. BridgeGame 클래스
 
     | 함수명 | 매개변수 | 리턴타입 | 용도 |
     | --- | --- | --- | --- |
     | move |  |  | InputView를 불러와 move 값 가져와 게임 진행 |
     | retry |  |  | InputView를 불러와 move 값 가져와 게임 종료 및 재시작 설정 |
 
-    13. BridgeMaker 클래스
+    7. BridgeMaker 클래스 - 생성자 private val bridgeNumberGenerator: BridgeNumberGenerator
     
     | 함수명 | 매개변수 | 리턴타입 | 용도 |
     | --- | --- | --- | --- |
-    | printWinnerNumberMessage |  |  | 터미널에 '당첨 번호를 입력해 주세요.' 출력 |
+    | makeBridge | size: Int | List-String | 사이즈만큼 반복해 다리 정보를 담은 List 생성 후 return |
     
 ---
 ## 문제 - 다리 건너기
