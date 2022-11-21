@@ -93,14 +93,23 @@
 
     | 함수명 | 매개변수 | 리턴타입 | 용도 |
     | --- | --- | --- | --- |
-    | move |  |  | InputView를 불러와 move 값 가져와 게임 진행 |
-    | retry |  |  | InputView를 불러와 move 값 가져와 게임 종료 및 재시작 설정 |
+    | move | moveData: Int |  | moveData 값을 읽어 게임 진행 |
+    | retry | gameCommand:  |  | gameCommand 값을 읽어 게임 종료 및 재시작 설정 |
 
     7. BridgeMaker 클래스 - 생성자 private val bridgeNumberGenerator: BridgeNumberGenerator
     
     | 함수명 | 매개변수 | 리턴타입 | 용도 |
     | --- | --- | --- | --- |
     | makeBridge | size: Int | List-String | 사이즈만큼 반복해 다리 정보를 담은 List 생성 후 return |
+    
+    8. BridgeController 클래스
+    
+    + InputView와 OutputView, Bridge 클래스들을 이용해 게임 진행
+    + init에서 초기 생성 시 다리 길이를 입력 받도록하고, 그 다리 길이만큼 다리를 생성하도록 한다.
+    
+    | 함수명 | 매개변수 | 리턴타입 | 용도 |
+    | --- | --- | --- | --- |
+    | startBridgeGame |  |  | 다리 건너기 게임 진행 |
     
 ---
 ## 문제 - 다리 건너기
